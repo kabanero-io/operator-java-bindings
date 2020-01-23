@@ -18,7 +18,6 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
 import io.kabanero.v1alpha2.models.KabaneroSpecStacksPipelines;
 import io.kabanero.v1alpha2.models.KabaneroSpecStacksRepositories;
-import io.kabanero.v1alpha2.models.KabaneroSpecStacksTriggers;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ import java.util.List;
  * InstanceStackConfig defines the customization entries for a set of stacks.
  */
 @ApiModel(description = "InstanceStackConfig defines the customization entries for a set of stacks.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpecStacks {
   public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
   @SerializedName(SERIALIZED_NAME_PIPELINES)
@@ -37,10 +36,6 @@ public class KabaneroSpecStacks {
   public static final String SERIALIZED_NAME_REPOSITORIES = "repositories";
   @SerializedName(SERIALIZED_NAME_REPOSITORIES)
   private List<KabaneroSpecStacksRepositories> repositories = null;
-
-  public static final String SERIALIZED_NAME_TRIGGERS = "triggers";
-  @SerializedName(SERIALIZED_NAME_TRIGGERS)
-  private List<KabaneroSpecStacksTriggers> triggers = null;
 
 
   public KabaneroSpecStacks pipelines(List<KabaneroSpecStacksPipelines> pipelines) {
@@ -105,37 +100,6 @@ public class KabaneroSpecStacks {
   }
 
 
-  public KabaneroSpecStacks triggers(List<KabaneroSpecStacksTriggers> triggers) {
-    
-    this.triggers = triggers;
-    return this;
-  }
-
-  public KabaneroSpecStacks addTriggersItem(KabaneroSpecStacksTriggers triggersItem) {
-    if (this.triggers == null) {
-      this.triggers = new ArrayList<KabaneroSpecStacksTriggers>();
-    }
-    this.triggers.add(triggersItem);
-    return this;
-  }
-
-   /**
-   * Get triggers
-   * @return triggers
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public List<KabaneroSpecStacksTriggers> getTriggers() {
-    return triggers;
-  }
-
-
-  public void setTriggers(List<KabaneroSpecStacksTriggers> triggers) {
-    this.triggers = triggers;
-  }
-
-
   @Override
   public boolean equals(java.lang.Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
@@ -153,7 +117,6 @@ public class KabaneroSpecStacks {
     sb.append("class KabaneroSpecStacks {\n");
     sb.append("    pipelines: ").append(toIndentedString(pipelines)).append("\n");
     sb.append("    repositories: ").append(toIndentedString(repositories)).append("\n");
-    sb.append("    triggers: ").append(toIndentedString(triggers)).append("\n");
     sb.append("}");
     return sb.toString();
   }

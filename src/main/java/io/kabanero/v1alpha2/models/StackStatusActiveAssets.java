@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * RepositoryAssetStatus defines the observed state of a single asset in a respository, in the stack.
  */
 @ApiModel(description = "RepositoryAssetStatus defines the observed state of a single asset in a respository, in the stack.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:37:39.132Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
 public class StackStatusActiveAssets {
   public static final String SERIALIZED_NAME_ASSET_DIGEST = "assetDigest";
   @SerializedName(SERIALIZED_NAME_ASSET_DIGEST)

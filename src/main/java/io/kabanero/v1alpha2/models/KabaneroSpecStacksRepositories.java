@@ -16,26 +16,53 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksPipelines;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * RepositoryConfig defines customization entries for a stack.
  */
 @ApiModel(description = "RepositoryConfig defines customization entries for a stack.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpecStacksRepositories {
+  public static final String SERIALIZED_NAME_HTTPS = "https";
+  @SerializedName(SERIALIZED_NAME_HTTPS)
+  private KabaneroSpecStacksHttps https;
+
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   private String name;
 
-  public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
-  @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
-  private Boolean skipCertVerification;
+  public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
+  @SerializedName(SERIALIZED_NAME_PIPELINES)
+  private List<KabaneroSpecStacksPipelines> pipelines = null;
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
+
+  public KabaneroSpecStacksRepositories https(KabaneroSpecStacksHttps https) {
+    
+    this.https = https;
+    return this;
+  }
+
+   /**
+   * Get https
+   * @return https
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecStacksHttps getHttps() {
+    return https;
+  }
+
+
+  public void setHttps(KabaneroSpecStacksHttps https) {
+    this.https = https;
+  }
 
 
   public KabaneroSpecStacksRepositories name(String name) {
@@ -61,49 +88,34 @@ public class KabaneroSpecStacksRepositories {
   }
 
 
-  public KabaneroSpecStacksRepositories skipCertVerification(Boolean skipCertVerification) {
+  public KabaneroSpecStacksRepositories pipelines(List<KabaneroSpecStacksPipelines> pipelines) {
     
-    this.skipCertVerification = skipCertVerification;
+    this.pipelines = pipelines;
+    return this;
+  }
+
+  public KabaneroSpecStacksRepositories addPipelinesItem(KabaneroSpecStacksPipelines pipelinesItem) {
+    if (this.pipelines == null) {
+      this.pipelines = new ArrayList<KabaneroSpecStacksPipelines>();
+    }
+    this.pipelines.add(pipelinesItem);
     return this;
   }
 
    /**
-   * Get skipCertVerification
-   * @return skipCertVerification
+   * Get pipelines
+   * @return pipelines
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public Boolean getSkipCertVerification() {
-    return skipCertVerification;
+  public List<KabaneroSpecStacksPipelines> getPipelines() {
+    return pipelines;
   }
 
 
-  public void setSkipCertVerification(Boolean skipCertVerification) {
-    this.skipCertVerification = skipCertVerification;
-  }
-
-
-  public KabaneroSpecStacksRepositories url(String url) {
-    
-    this.url = url;
-    return this;
-  }
-
-   /**
-   * Get url
-   * @return url
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getUrl() {
-    return url;
-  }
-
-
-  public void setUrl(String url) {
-    this.url = url;
+  public void setPipelines(List<KabaneroSpecStacksPipelines> pipelines) {
+    this.pipelines = pipelines;
   }
 
 
@@ -122,9 +134,9 @@ public class KabaneroSpecStacksRepositories {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroSpecStacksRepositories {\n");
+    sb.append("    https: ").append(toIndentedString(https)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    skipCertVerification: ").append(toIndentedString(skipCertVerification)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
+    sb.append("    pipelines: ").append(toIndentedString(pipelines)).append("\n");
     sb.append("}");
     return sb.toString();
   }

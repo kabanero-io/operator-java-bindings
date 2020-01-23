@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * KnativeServingStatus defines the observed status details of Knative Serving.
  */
 @ApiModel(description = "KnativeServingStatus defines the observed status details of Knative Serving.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroStatusServerlessKnativeServing {
   public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
   @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)

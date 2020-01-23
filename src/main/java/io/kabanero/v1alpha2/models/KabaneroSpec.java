@@ -24,6 +24,7 @@ import io.kabanero.v1alpha2.models.KabaneroSpecGithub;
 import io.kabanero.v1alpha2.models.KabaneroSpecLanding;
 import io.kabanero.v1alpha2.models.KabaneroSpecStackController;
 import io.kabanero.v1alpha2.models.KabaneroSpecStacks;
+import io.kabanero.v1alpha2.models.KabaneroSpecTriggers;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
@@ -33,7 +34,7 @@ import java.util.List;
  * KabaneroSpec defines the desired state of Kabanero
  */
 @ApiModel(description = "KabaneroSpec defines the desired state of Kabanero")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpec {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)
@@ -70,6 +71,10 @@ public class KabaneroSpec {
   public static final String SERIALIZED_NAME_TARGET_NAMESPACES = "targetNamespaces";
   @SerializedName(SERIALIZED_NAME_TARGET_NAMESPACES)
   private List<String> targetNamespaces = null;
+
+  public static final String SERIALIZED_NAME_TRIGGERS = "triggers";
+  @SerializedName(SERIALIZED_NAME_TRIGGERS)
+  private List<KabaneroSpecTriggers> triggers = null;
 
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
@@ -291,6 +296,37 @@ public class KabaneroSpec {
   }
 
 
+  public KabaneroSpec triggers(List<KabaneroSpecTriggers> triggers) {
+    
+    this.triggers = triggers;
+    return this;
+  }
+
+  public KabaneroSpec addTriggersItem(KabaneroSpecTriggers triggersItem) {
+    if (this.triggers == null) {
+      this.triggers = new ArrayList<KabaneroSpecTriggers>();
+    }
+    this.triggers.add(triggersItem);
+    return this;
+  }
+
+   /**
+   * Get triggers
+   * @return triggers
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public List<KabaneroSpecTriggers> getTriggers() {
+    return triggers;
+  }
+
+
+  public void setTriggers(List<KabaneroSpecTriggers> triggers) {
+    this.triggers = triggers;
+  }
+
+
   public KabaneroSpec version(String version) {
     
     this.version = version;
@@ -338,6 +374,7 @@ public class KabaneroSpec {
     sb.append("    stackController: ").append(toIndentedString(stackController)).append("\n");
     sb.append("    stacks: ").append(toIndentedString(stacks)).append("\n");
     sb.append("    targetNamespaces: ").append(toIndentedString(targetNamespaces)).append("\n");
+    sb.append("    triggers: ").append(toIndentedString(triggers)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();

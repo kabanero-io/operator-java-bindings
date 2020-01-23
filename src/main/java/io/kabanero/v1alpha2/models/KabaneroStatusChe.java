@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Che instance readiness status.
  */
 @ApiModel(description = "Che instance readiness status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroStatusChe {
   public static final String SERIALIZED_NAME_CHE_OPERATOR = "cheOperator";
   @SerializedName(SERIALIZED_NAME_CHE_OPERATOR)

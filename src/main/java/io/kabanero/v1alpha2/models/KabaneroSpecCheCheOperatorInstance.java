@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * CheOperatorInstanceSpec defines customization entries for the Che operator instance.
  */
 @ApiModel(description = "CheOperatorInstanceSpec defines customization entries for the Che operator instance.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpecCheCheOperatorInstance {
   public static final String SERIALIZED_NAME_CHE_WORKSPACE_CLUSTER_ROLE = "cheWorkspaceClusterRole";
   @SerializedName(SERIALIZED_NAME_CHE_WORKSPACE_CLUSTER_ROLE)

@@ -20,63 +20,63 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Image defines a container image used by a stack
+ * HttpsProtocolFile defines how to retrieve a file over https
  */
-@ApiModel(description = "Image defines a container image used by a stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
-public class StackSpecImages {
-  public static final String SERIALIZED_NAME_ID = "id";
-  @SerializedName(SERIALIZED_NAME_ID)
-  private String id;
+@ApiModel(description = "HttpsProtocolFile defines how to retrieve a file over https")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+public class KabaneroSpecStacksHttps {
+  public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
+  @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
+  private Boolean skipCertVerification;
 
-  public static final String SERIALIZED_NAME_IMAGE = "image";
-  @SerializedName(SERIALIZED_NAME_IMAGE)
-  private String image;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
 
-  public StackSpecImages id(String id) {
+  public KabaneroSpecStacksHttps skipCertVerification(Boolean skipCertVerification) {
     
-    this.id = id;
+    this.skipCertVerification = skipCertVerification;
     return this;
   }
 
    /**
-   * Get id
-   * @return id
+   * Get skipCertVerification
+   * @return skipCertVerification
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getId() {
-    return id;
+  public Boolean getSkipCertVerification() {
+    return skipCertVerification;
   }
 
 
-  public void setId(String id) {
-    this.id = id;
+  public void setSkipCertVerification(Boolean skipCertVerification) {
+    this.skipCertVerification = skipCertVerification;
   }
 
 
-  public StackSpecImages image(String image) {
+  public KabaneroSpecStacksHttps url(String url) {
     
-    this.image = image;
+    this.url = url;
     return this;
   }
 
    /**
-   * Get image
-   * @return image
+   * Get url
+   * @return url
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getImage() {
-    return image;
+  public String getUrl() {
+    return url;
   }
 
 
-  public void setImage(String image) {
-    this.image = image;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
@@ -94,9 +94,9 @@ public class StackSpecImages {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class StackSpecImages {\n");
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    image: ").append(toIndentedString(image)).append("\n");
+    sb.append("class KabaneroSpecStacksHttps {\n");
+    sb.append("    skipCertVerification: ").append(toIndentedString(skipCertVerification)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");
     return sb.toString();
   }

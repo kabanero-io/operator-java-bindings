@@ -16,78 +16,67 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
-import io.kabanero.v1alpha2.models.StackStatusVersions;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * StackStatus defines the observed state of a stack
+ * HttpsProtocolFile defines how to retrieve a file over https
  */
-@ApiModel(description = "StackStatus defines the observed state of a stack")
+@ApiModel(description = "HttpsProtocolFile defines how to retrieve a file over https")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
-public class StackStatus {
-  public static final String SERIALIZED_NAME_STATUS_MESSAGE = "statusMessage";
-  @SerializedName(SERIALIZED_NAME_STATUS_MESSAGE)
-  private String statusMessage;
+public class StackSpecHttps {
+  public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
+  @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
+  private Boolean skipCertVerification;
 
-  public static final String SERIALIZED_NAME_VERSIONS = "versions";
-  @SerializedName(SERIALIZED_NAME_VERSIONS)
-  private List<StackStatusVersions> versions = null;
+  public static final String SERIALIZED_NAME_URL = "url";
+  @SerializedName(SERIALIZED_NAME_URL)
+  private String url;
 
 
-  public StackStatus statusMessage(String statusMessage) {
+  public StackSpecHttps skipCertVerification(Boolean skipCertVerification) {
     
-    this.statusMessage = statusMessage;
+    this.skipCertVerification = skipCertVerification;
     return this;
   }
 
    /**
-   * Get statusMessage
-   * @return statusMessage
+   * Get skipCertVerification
+   * @return skipCertVerification
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getStatusMessage() {
-    return statusMessage;
+  public Boolean getSkipCertVerification() {
+    return skipCertVerification;
   }
 
 
-  public void setStatusMessage(String statusMessage) {
-    this.statusMessage = statusMessage;
+  public void setSkipCertVerification(Boolean skipCertVerification) {
+    this.skipCertVerification = skipCertVerification;
   }
 
 
-  public StackStatus versions(List<StackStatusVersions> versions) {
+  public StackSpecHttps url(String url) {
     
-    this.versions = versions;
-    return this;
-  }
-
-  public StackStatus addVersionsItem(StackStatusVersions versionsItem) {
-    if (this.versions == null) {
-      this.versions = new ArrayList<StackStatusVersions>();
-    }
-    this.versions.add(versionsItem);
+    this.url = url;
     return this;
   }
 
    /**
-   * Get versions
-   * @return versions
+   * Get url
+   * @return url
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public List<StackStatusVersions> getVersions() {
-    return versions;
+  public String getUrl() {
+    return url;
   }
 
 
-  public void setVersions(List<StackStatusVersions> versions) {
-    this.versions = versions;
+  public void setUrl(String url) {
+    this.url = url;
   }
 
 
@@ -105,9 +94,9 @@ public class StackStatus {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class StackStatus {\n");
-    sb.append("    statusMessage: ").append(toIndentedString(statusMessage)).append("\n");
-    sb.append("    versions: ").append(toIndentedString(versions)).append("\n");
+    sb.append("class StackSpecHttps {\n");
+    sb.append("    skipCertVerification: ").append(toIndentedString(skipCertVerification)).append("\n");
+    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");
     return sb.toString();
   }

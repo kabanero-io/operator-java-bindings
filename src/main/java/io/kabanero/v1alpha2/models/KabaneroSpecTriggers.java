@@ -16,94 +16,95 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Knative eventing instance readiness status.
+ * TriggerSpec defines the sets of default triggers for the stacks
  */
-@ApiModel(description = "Knative eventing instance readiness status.")
+@ApiModel(description = "TriggerSpec defines the sets of default triggers for the stacks")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
-public class KabaneroStatusKnativeEventing {
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
+public class KabaneroSpecTriggers {
+  public static final String SERIALIZED_NAME_HTTPS = "https";
+  @SerializedName(SERIALIZED_NAME_HTTPS)
+  private KabaneroSpecStacksHttps https;
 
-  public static final String SERIALIZED_NAME_READY = "ready";
-  @SerializedName(SERIALIZED_NAME_READY)
-  private String ready;
+  public static final String SERIALIZED_NAME_ID = "id";
+  @SerializedName(SERIALIZED_NAME_ID)
+  private String id;
 
-  public static final String SERIALIZED_NAME_VERSION = "version";
-  @SerializedName(SERIALIZED_NAME_VERSION)
-  private String version;
+  public static final String SERIALIZED_NAME_SHA256 = "sha256";
+  @SerializedName(SERIALIZED_NAME_SHA256)
+  private String sha256;
 
 
-  public KabaneroStatusKnativeEventing errorMessage(String errorMessage) {
+  public KabaneroSpecTriggers https(KabaneroSpecStacksHttps https) {
     
-    this.errorMessage = errorMessage;
+    this.https = https;
     return this;
   }
 
    /**
-   * Get errorMessage
-   * @return errorMessage
+   * Get https
+   * @return https
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getErrorMessage() {
-    return errorMessage;
+  public KabaneroSpecStacksHttps getHttps() {
+    return https;
   }
 
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setHttps(KabaneroSpecStacksHttps https) {
+    this.https = https;
   }
 
 
-  public KabaneroStatusKnativeEventing ready(String ready) {
+  public KabaneroSpecTriggers id(String id) {
     
-    this.ready = ready;
+    this.id = id;
     return this;
   }
 
    /**
-   * Get ready
-   * @return ready
+   * Get id
+   * @return id
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getReady() {
-    return ready;
+  public String getId() {
+    return id;
   }
 
 
-  public void setReady(String ready) {
-    this.ready = ready;
+  public void setId(String id) {
+    this.id = id;
   }
 
 
-  public KabaneroStatusKnativeEventing version(String version) {
+  public KabaneroSpecTriggers sha256(String sha256) {
     
-    this.version = version;
+    this.sha256 = sha256;
     return this;
   }
 
    /**
-   * Get version
-   * @return version
+   * Get sha256
+   * @return sha256
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getVersion() {
-    return version;
+  public String getSha256() {
+    return sha256;
   }
 
 
-  public void setVersion(String version) {
-    this.version = version;
+  public void setSha256(String sha256) {
+    this.sha256 = sha256;
   }
 
 
@@ -121,10 +122,10 @@ public class KabaneroStatusKnativeEventing {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroStatusKnativeEventing {\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
-    sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
-    sb.append("    version: ").append(toIndentedString(version)).append("\n");
+    sb.append("class KabaneroSpecTriggers {\n");
+    sb.append("    https: ").append(toIndentedString(https)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    sha256: ").append(toIndentedString(sha256)).append("\n");
     sb.append("}");
     return sb.toString();
   }

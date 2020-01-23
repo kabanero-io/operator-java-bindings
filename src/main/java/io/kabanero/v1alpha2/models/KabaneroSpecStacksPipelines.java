@@ -16,6 +16,7 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -23,8 +24,12 @@ import io.swagger.annotations.ApiModelProperty;
  * PipelineSpec defines the sets of default pipelines for the stacks.
  */
 @ApiModel(description = "PipelineSpec defines the sets of default pipelines for the stacks.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpecStacksPipelines {
+  public static final String SERIALIZED_NAME_HTTPS = "https";
+  @SerializedName(SERIALIZED_NAME_HTTPS)
+  private KabaneroSpecStacksHttps https;
+
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   private String id;
@@ -33,9 +38,28 @@ public class KabaneroSpecStacksPipelines {
   @SerializedName(SERIALIZED_NAME_SHA256)
   private String sha256;
 
-  public static final String SERIALIZED_NAME_URL = "url";
-  @SerializedName(SERIALIZED_NAME_URL)
-  private String url;
+
+  public KabaneroSpecStacksPipelines https(KabaneroSpecStacksHttps https) {
+    
+    this.https = https;
+    return this;
+  }
+
+   /**
+   * Get https
+   * @return https
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecStacksHttps getHttps() {
+    return https;
+  }
+
+
+  public void setHttps(KabaneroSpecStacksHttps https) {
+    this.https = https;
+  }
 
 
   public KabaneroSpecStacksPipelines id(String id) {
@@ -84,29 +108,6 @@ public class KabaneroSpecStacksPipelines {
   }
 
 
-  public KabaneroSpecStacksPipelines url(String url) {
-    
-    this.url = url;
-    return this;
-  }
-
-   /**
-   * Get url
-   * @return url
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getUrl() {
-    return url;
-  }
-
-
-  public void setUrl(String url) {
-    this.url = url;
-  }
-
-
   @Override
   public boolean equals(java.lang.Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
@@ -122,9 +123,9 @@ public class KabaneroSpecStacksPipelines {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroSpecStacksPipelines {\n");
+    sb.append("    https: ").append(toIndentedString(https)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    sha256: ").append(toIndentedString(sha256)).append("\n");
-    sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");
     return sb.toString();
   }

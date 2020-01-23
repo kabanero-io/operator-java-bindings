@@ -27,7 +27,7 @@ import java.util.List;
  * StackVersionStatus defines the observed state of a specific stack version.
  */
 @ApiModel(description = "StackVersionStatus defines the observed state of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:37:39.132Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
 public class StackStatusVersions {
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)

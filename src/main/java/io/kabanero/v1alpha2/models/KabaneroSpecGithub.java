@@ -25,7 +25,7 @@ import java.util.List;
  * GithubConfig represents the Github information (public or GHE) where the organization and teams managing the stacks live.  Members of the specified team in the specified organization will have admin authority in the Kabanero CLI.
  */
 @ApiModel(description = "GithubConfig represents the Github information (public or GHE) where the organization and teams managing the stacks live.  Members of the specified team in the specified organization will have admin authority in the Kabanero CLI.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroSpecGithub {
   public static final String SERIALIZED_NAME_API_URL = "apiUrl";
   @SerializedName(SERIALIZED_NAME_API_URL)

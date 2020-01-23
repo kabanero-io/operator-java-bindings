@@ -27,7 +27,7 @@ import java.util.List;
  * StackVersion defines the desired composition of a specific stack version.
  */
 @ApiModel(description = "StackVersion defines the desired composition of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:37:39.132Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
 public class StackSpecVersions {
   public static final String SERIALIZED_NAME_DESIRED_STATE = "desiredState";
   @SerializedName(SERIALIZED_NAME_DESIRED_STATE)
@@ -40,10 +40,6 @@ public class StackSpecVersions {
   public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
   @SerializedName(SERIALIZED_NAME_PIPELINES)
   private List<StackSpecPipelines> pipelines = null;
-
-  public static final String SERIALIZED_NAME_REPOSITORY_URL = "repositoryUrl";
-  @SerializedName(SERIALIZED_NAME_REPOSITORY_URL)
-  private String repositoryUrl;
 
   public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
   @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
@@ -139,29 +135,6 @@ public class StackSpecVersions {
   }
 
 
-  public StackSpecVersions repositoryUrl(String repositoryUrl) {
-    
-    this.repositoryUrl = repositoryUrl;
-    return this;
-  }
-
-   /**
-   * Get repositoryUrl
-   * @return repositoryUrl
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getRepositoryUrl() {
-    return repositoryUrl;
-  }
-
-
-  public void setRepositoryUrl(String repositoryUrl) {
-    this.repositoryUrl = repositoryUrl;
-  }
-
-
   public StackSpecVersions skipCertVerification(Boolean skipCertVerification) {
     
     this.skipCertVerification = skipCertVerification;
@@ -226,7 +199,6 @@ public class StackSpecVersions {
     sb.append("    desiredState: ").append(toIndentedString(desiredState)).append("\n");
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
     sb.append("    pipelines: ").append(toIndentedString(pipelines)).append("\n");
-    sb.append("    repositoryUrl: ").append(toIndentedString(repositoryUrl)).append("\n");
     sb.append("    skipCertVerification: ").append(toIndentedString(skipCertVerification)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");

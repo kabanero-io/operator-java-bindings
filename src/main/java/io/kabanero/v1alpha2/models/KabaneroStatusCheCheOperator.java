@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * CheOperatorStatus defines the observed status details of the Che operator.
  */
 @ApiModel(description = "CheOperatorStatus defines the observed status details of the Che operator.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-15T21:34:41.694Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
 public class KabaneroStatusCheCheOperator {
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
