@@ -25,42 +25,19 @@ import java.util.List;
  * Events instance status
  */
 @ApiModel(description = "Events instance status")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroStatusEvents {
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
-
   public static final String SERIALIZED_NAME_HOSTNAMES = "hostnames";
   @SerializedName(SERIALIZED_NAME_HOSTNAMES)
   private List<String> hostnames = null;
 
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
+
   public static final String SERIALIZED_NAME_READY = "ready";
   @SerializedName(SERIALIZED_NAME_READY)
   private String ready;
-
-
-  public KabaneroStatusEvents errorMessage(String errorMessage) {
-    
-    this.errorMessage = errorMessage;
-    return this;
-  }
-
-   /**
-   * Get errorMessage
-   * @return errorMessage
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getErrorMessage() {
-    return errorMessage;
-  }
-
-
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
-  }
 
 
   public KabaneroStatusEvents hostnames(List<String> hostnames) {
@@ -91,6 +68,29 @@ public class KabaneroStatusEvents {
 
   public void setHostnames(List<String> hostnames) {
     this.hostnames = hostnames;
+  }
+
+
+  public KabaneroStatusEvents message(String message) {
+    
+    this.message = message;
+    return this;
+  }
+
+   /**
+   * Get message
+   * @return message
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getMessage() {
+    return message;
+  }
+
+
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -132,8 +132,8 @@ public class KabaneroStatusEvents {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroStatusEvents {\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
     sb.append("    hostnames: ").append(toIndentedString(hostnames)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("}");
     return sb.toString();

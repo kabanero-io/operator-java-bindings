@@ -16,13 +16,15 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * KabaneroSpecAdmissionControllerWebhook
+ * CWRCustomResourceDevFileRegImage defines DevFileRegistryImage custom resource customization for the codeready-workspaces operator.
  */
+@ApiModel(description = "CWRCustomResourceDevFileRegImage defines DevFileRegistryImage custom resource customization for the codeready-workspaces operator.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
-public class KabaneroSpecAdmissionControllerWebhook {
+public class KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage {
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
   private String image;
@@ -40,7 +42,7 @@ public class KabaneroSpecAdmissionControllerWebhook {
   private String version;
 
 
-  public KabaneroSpecAdmissionControllerWebhook image(String image) {
+  public KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage image(String image) {
     
     this.image = image;
     return this;
@@ -63,7 +65,7 @@ public class KabaneroSpecAdmissionControllerWebhook {
   }
 
 
-  public KabaneroSpecAdmissionControllerWebhook repository(String repository) {
+  public KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage repository(String repository) {
     
     this.repository = repository;
     return this;
@@ -86,7 +88,7 @@ public class KabaneroSpecAdmissionControllerWebhook {
   }
 
 
-  public KabaneroSpecAdmissionControllerWebhook tag(String tag) {
+  public KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage tag(String tag) {
     
     this.tag = tag;
     return this;
@@ -109,7 +111,7 @@ public class KabaneroSpecAdmissionControllerWebhook {
   }
 
 
-  public KabaneroSpecAdmissionControllerWebhook version(String version) {
+  public KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage version(String version) {
     
     this.version = version;
     return this;
@@ -146,7 +148,7 @@ public class KabaneroSpecAdmissionControllerWebhook {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroSpecAdmissionControllerWebhook {\n");
+    sb.append("class KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage {\n");
     sb.append("    image: ").append(toIndentedString(image)).append("\n");
     sb.append("    repository: ").append(toIndentedString(repository)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");

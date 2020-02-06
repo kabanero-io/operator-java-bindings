@@ -23,11 +23,11 @@ import io.swagger.annotations.ApiModelProperty;
  * Kabanero operator instance readiness status. The status is directly correlated to the availability of resources dependencies.
  */
 @ApiModel(description = "Kabanero operator instance readiness status. The status is directly correlated to the availability of resources dependencies.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroStatusKabaneroInstance {
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
 
   public static final String SERIALIZED_NAME_READY = "ready";
   @SerializedName(SERIALIZED_NAME_READY)
@@ -38,26 +38,26 @@ public class KabaneroStatusKabaneroInstance {
   private String version;
 
 
-  public KabaneroStatusKabaneroInstance errorMessage(String errorMessage) {
+  public KabaneroStatusKabaneroInstance message(String message) {
     
-    this.errorMessage = errorMessage;
+    this.message = message;
     return this;
   }
 
    /**
-   * Get errorMessage
-   * @return errorMessage
+   * Get message
+   * @return message
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getErrorMessage() {
-    return errorMessage;
+  public String getMessage() {
+    return message;
   }
 
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -122,7 +122,7 @@ public class KabaneroStatusKabaneroInstance {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroStatusKabaneroInstance {\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * PipelineSpec defines the sets of default pipelines for the stacks.
  */
 @ApiModel(description = "PipelineSpec defines the sets of default pipelines for the stacks.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class StackSpecPipelines {
   public static final String SERIALIZED_NAME_HTTPS = "https";
   @SerializedName(SERIALIZED_NAME_HTTPS)

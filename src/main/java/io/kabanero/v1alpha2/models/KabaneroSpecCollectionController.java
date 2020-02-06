@@ -20,11 +20,11 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * KabaneroCheSpec defines customization entries for Kabanero Che.
+ * CollectionControllerSpec defines customization entried for the Kabanero collection controller.
  */
-@ApiModel(description = "KabaneroCheSpec defines customization entries for Kabanero Che.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
-public class KabaneroSpecCheKabaneroChe {
+@ApiModel(description = "CollectionControllerSpec defines customization entried for the Kabanero collection controller.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+public class KabaneroSpecCollectionController {
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)
   private String image;
@@ -42,7 +42,7 @@ public class KabaneroSpecCheKabaneroChe {
   private String version;
 
 
-  public KabaneroSpecCheKabaneroChe image(String image) {
+  public KabaneroSpecCollectionController image(String image) {
     
     this.image = image;
     return this;
@@ -65,7 +65,7 @@ public class KabaneroSpecCheKabaneroChe {
   }
 
 
-  public KabaneroSpecCheKabaneroChe repository(String repository) {
+  public KabaneroSpecCollectionController repository(String repository) {
     
     this.repository = repository;
     return this;
@@ -88,7 +88,7 @@ public class KabaneroSpecCheKabaneroChe {
   }
 
 
-  public KabaneroSpecCheKabaneroChe tag(String tag) {
+  public KabaneroSpecCollectionController tag(String tag) {
     
     this.tag = tag;
     return this;
@@ -111,7 +111,7 @@ public class KabaneroSpecCheKabaneroChe {
   }
 
 
-  public KabaneroSpecCheKabaneroChe version(String version) {
+  public KabaneroSpecCollectionController version(String version) {
     
     this.version = version;
     return this;
@@ -148,7 +148,7 @@ public class KabaneroSpecCheKabaneroChe {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroSpecCheKabaneroChe {\n");
+    sb.append("class KabaneroSpecCollectionController {\n");
     sb.append("    image: ").append(toIndentedString(image)).append("\n");
     sb.append("    repository: ").append(toIndentedString(repository)).append("\n");
     sb.append("    tag: ").append(toIndentedString(tag)).append("\n");

@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * HttpsProtocolFile defines how to retrieve a file over https
  */
 @ApiModel(description = "HttpsProtocolFile defines how to retrieve a file over https")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroSpecStacksHttps {
   public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
   @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)

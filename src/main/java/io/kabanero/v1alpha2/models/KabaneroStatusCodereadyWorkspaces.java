@@ -16,52 +16,76 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroStatusCodereadyWorkspacesOperator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Knative eventing instance readiness status.
+ * Codeready-workspaces instance readiness status.
  */
-@ApiModel(description = "Knative eventing instance readiness status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
-public class KabaneroStatusKnativeEventing {
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
+@ApiModel(description = "Codeready-workspaces instance readiness status.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+public class KabaneroStatusCodereadyWorkspaces {
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
+
+  public static final String SERIALIZED_NAME_OPERATOR = "operator";
+  @SerializedName(SERIALIZED_NAME_OPERATOR)
+  private KabaneroStatusCodereadyWorkspacesOperator operator;
 
   public static final String SERIALIZED_NAME_READY = "ready";
   @SerializedName(SERIALIZED_NAME_READY)
   private String ready;
 
-  public static final String SERIALIZED_NAME_VERSION = "version";
-  @SerializedName(SERIALIZED_NAME_VERSION)
-  private String version;
 
-
-  public KabaneroStatusKnativeEventing errorMessage(String errorMessage) {
+  public KabaneroStatusCodereadyWorkspaces message(String message) {
     
-    this.errorMessage = errorMessage;
+    this.message = message;
     return this;
   }
 
    /**
-   * Get errorMessage
-   * @return errorMessage
+   * Get message
+   * @return message
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getErrorMessage() {
-    return errorMessage;
+  public String getMessage() {
+    return message;
   }
 
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
-  public KabaneroStatusKnativeEventing ready(String ready) {
+  public KabaneroStatusCodereadyWorkspaces operator(KabaneroStatusCodereadyWorkspacesOperator operator) {
+    
+    this.operator = operator;
+    return this;
+  }
+
+   /**
+   * Get operator
+   * @return operator
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusCodereadyWorkspacesOperator getOperator() {
+    return operator;
+  }
+
+
+  public void setOperator(KabaneroStatusCodereadyWorkspacesOperator operator) {
+    this.operator = operator;
+  }
+
+
+  public KabaneroStatusCodereadyWorkspaces ready(String ready) {
     
     this.ready = ready;
     return this;
@@ -84,29 +108,6 @@ public class KabaneroStatusKnativeEventing {
   }
 
 
-  public KabaneroStatusKnativeEventing version(String version) {
-    
-    this.version = version;
-    return this;
-  }
-
-   /**
-   * Get version
-   * @return version
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getVersion() {
-    return version;
-  }
-
-
-  public void setVersion(String version) {
-    this.version = version;
-  }
-
-
   @Override
   public boolean equals(java.lang.Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
@@ -121,10 +122,10 @@ public class KabaneroStatusKnativeEventing {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroStatusKnativeEventing {\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
+    sb.append("class KabaneroStatusCodereadyWorkspaces {\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("    operator: ").append(toIndentedString(operator)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
-    sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();
   }

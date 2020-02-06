@@ -16,95 +16,92 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
-import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * TriggerSpec defines the sets of default triggers for the stacks
+ * KabaneroSpecSso
  */
-@ApiModel(description = "TriggerSpec defines the sets of default triggers for the stacks")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
-public class KabaneroSpecTriggers {
-  public static final String SERIALIZED_NAME_HTTPS = "https";
-  @SerializedName(SERIALIZED_NAME_HTTPS)
-  private KabaneroSpecStacksHttps https;
+public class KabaneroSpecSso {
+  public static final String SERIALIZED_NAME_ADMIN_SECRET_NAME = "adminSecretName";
+  @SerializedName(SERIALIZED_NAME_ADMIN_SECRET_NAME)
+  private String adminSecretName;
 
-  public static final String SERIALIZED_NAME_ID = "id";
-  @SerializedName(SERIALIZED_NAME_ID)
-  private String id;
+  public static final String SERIALIZED_NAME_ENABLE = "enable";
+  @SerializedName(SERIALIZED_NAME_ENABLE)
+  private Boolean enable;
 
-  public static final String SERIALIZED_NAME_SHA256 = "sha256";
-  @SerializedName(SERIALIZED_NAME_SHA256)
-  private String sha256;
+  public static final String SERIALIZED_NAME_PROVIDER = "provider";
+  @SerializedName(SERIALIZED_NAME_PROVIDER)
+  private String provider;
 
 
-  public KabaneroSpecTriggers https(KabaneroSpecStacksHttps https) {
+  public KabaneroSpecSso adminSecretName(String adminSecretName) {
     
-    this.https = https;
+    this.adminSecretName = adminSecretName;
     return this;
   }
 
    /**
-   * Get https
-   * @return https
+   * Get adminSecretName
+   * @return adminSecretName
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public KabaneroSpecStacksHttps getHttps() {
-    return https;
+  public String getAdminSecretName() {
+    return adminSecretName;
   }
 
 
-  public void setHttps(KabaneroSpecStacksHttps https) {
-    this.https = https;
+  public void setAdminSecretName(String adminSecretName) {
+    this.adminSecretName = adminSecretName;
   }
 
 
-  public KabaneroSpecTriggers id(String id) {
+  public KabaneroSpecSso enable(Boolean enable) {
     
-    this.id = id;
+    this.enable = enable;
     return this;
   }
 
    /**
-   * Get id
-   * @return id
+   * Get enable
+   * @return enable
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getId() {
-    return id;
+  public Boolean getEnable() {
+    return enable;
   }
 
 
-  public void setId(String id) {
-    this.id = id;
+  public void setEnable(Boolean enable) {
+    this.enable = enable;
   }
 
 
-  public KabaneroSpecTriggers sha256(String sha256) {
+  public KabaneroSpecSso provider(String provider) {
     
-    this.sha256 = sha256;
+    this.provider = provider;
     return this;
   }
 
    /**
-   * Get sha256
-   * @return sha256
+   * Get provider
+   * @return provider
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getSha256() {
-    return sha256;
+  public String getProvider() {
+    return provider;
   }
 
 
-  public void setSha256(String sha256) {
-    this.sha256 = sha256;
+  public void setProvider(String provider) {
+    this.provider = provider;
   }
 
 
@@ -122,10 +119,10 @@ public class KabaneroSpecTriggers {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroSpecTriggers {\n");
-    sb.append("    https: ").append(toIndentedString(https)).append("\n");
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    sha256: ").append(toIndentedString(sha256)).append("\n");
+    sb.append("class KabaneroSpecSso {\n");
+    sb.append("    adminSecretName: ").append(toIndentedString(adminSecretName)).append("\n");
+    sb.append("    enable: ").append(toIndentedString(enable)).append("\n");
+    sb.append("    provider: ").append(toIndentedString(provider)).append("\n");
     sb.append("}");
     return sb.toString();
   }

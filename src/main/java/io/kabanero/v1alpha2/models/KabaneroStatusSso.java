@@ -16,95 +16,94 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
-import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * TriggerSpec defines the sets of default triggers for the stacks
+ * SSO server status
  */
-@ApiModel(description = "TriggerSpec defines the sets of default triggers for the stacks")
+@ApiModel(description = "SSO server status")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
-public class KabaneroSpecTriggers {
-  public static final String SERIALIZED_NAME_HTTPS = "https";
-  @SerializedName(SERIALIZED_NAME_HTTPS)
-  private KabaneroSpecStacksHttps https;
+public class KabaneroStatusSso {
+  public static final String SERIALIZED_NAME_CONFIGURED = "configured";
+  @SerializedName(SERIALIZED_NAME_CONFIGURED)
+  private String configured;
 
-  public static final String SERIALIZED_NAME_ID = "id";
-  @SerializedName(SERIALIZED_NAME_ID)
-  private String id;
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
 
-  public static final String SERIALIZED_NAME_SHA256 = "sha256";
-  @SerializedName(SERIALIZED_NAME_SHA256)
-  private String sha256;
+  public static final String SERIALIZED_NAME_READY = "ready";
+  @SerializedName(SERIALIZED_NAME_READY)
+  private String ready;
 
 
-  public KabaneroSpecTriggers https(KabaneroSpecStacksHttps https) {
+  public KabaneroStatusSso configured(String configured) {
     
-    this.https = https;
+    this.configured = configured;
     return this;
   }
 
    /**
-   * Get https
-   * @return https
+   * Get configured
+   * @return configured
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public KabaneroSpecStacksHttps getHttps() {
-    return https;
+  public String getConfigured() {
+    return configured;
   }
 
 
-  public void setHttps(KabaneroSpecStacksHttps https) {
-    this.https = https;
+  public void setConfigured(String configured) {
+    this.configured = configured;
   }
 
 
-  public KabaneroSpecTriggers id(String id) {
+  public KabaneroStatusSso message(String message) {
     
-    this.id = id;
+    this.message = message;
     return this;
   }
 
    /**
-   * Get id
-   * @return id
+   * Get message
+   * @return message
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getId() {
-    return id;
+  public String getMessage() {
+    return message;
   }
 
 
-  public void setId(String id) {
-    this.id = id;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
-  public KabaneroSpecTriggers sha256(String sha256) {
+  public KabaneroStatusSso ready(String ready) {
     
-    this.sha256 = sha256;
+    this.ready = ready;
     return this;
   }
 
    /**
-   * Get sha256
-   * @return sha256
+   * Get ready
+   * @return ready
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getSha256() {
-    return sha256;
+  public String getReady() {
+    return ready;
   }
 
 
-  public void setSha256(String sha256) {
-    this.sha256 = sha256;
+  public void setReady(String ready) {
+    this.ready = ready;
   }
 
 
@@ -122,10 +121,10 @@ public class KabaneroSpecTriggers {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroSpecTriggers {\n");
-    sb.append("    https: ").append(toIndentedString(https)).append("\n");
-    sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    sha256: ").append(toIndentedString(sha256)).append("\n");
+    sb.append("class KabaneroStatusSso {\n");
+    sb.append("    configured: ").append(toIndentedString(configured)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("}");
     return sb.toString();
   }

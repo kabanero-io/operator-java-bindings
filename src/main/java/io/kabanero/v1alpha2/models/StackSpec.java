@@ -26,7 +26,7 @@ import java.util.List;
  * StackSpec defines the desired composition of a Stack
  */
 @ApiModel(description = "StackSpec defines the desired composition of a Stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class StackSpec {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)

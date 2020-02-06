@@ -26,7 +26,7 @@ import java.util.List;
  * StackStatus defines the observed state of a stack
  */
 @ApiModel(description = "StackStatus defines the observed state of a stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class StackStatus {
   public static final String SERIALIZED_NAME_STATUS_MESSAGE = "statusMessage";
   @SerializedName(SERIALIZED_NAME_STATUS_MESSAGE)

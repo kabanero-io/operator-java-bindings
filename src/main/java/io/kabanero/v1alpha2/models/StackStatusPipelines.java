@@ -26,7 +26,7 @@ import java.util.List;
  * PipelineStatus defines the observed state of the assets located within a single pipeline .tar.gz.
  */
 @ApiModel(description = "PipelineStatus defines the observed state of the assets located within a single pipeline .tar.gz.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class StackStatusPipelines {
   public static final String SERIALIZED_NAME_ACTIVE_ASSETS = "activeAssets";
   @SerializedName(SERIALIZED_NAME_ACTIVE_ASSETS)

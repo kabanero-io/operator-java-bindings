@@ -16,21 +16,49 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroStatusCodereadyWorkspacesOperatorInstance;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * CheOperatorStatus defines the observed status details of the Che operator.
+ * CRWOperatorStatus defines the observed status details of the codeready-workspaces operator.
  */
-@ApiModel(description = "CheOperatorStatus defines the observed status details of the Che operator.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
-public class KabaneroStatusCheCheOperator {
+@ApiModel(description = "CRWOperatorStatus defines the observed status details of the codeready-workspaces operator.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+public class KabaneroStatusCodereadyWorkspacesOperator {
+  public static final String SERIALIZED_NAME_INSTANCE = "instance";
+  @SerializedName(SERIALIZED_NAME_INSTANCE)
+  private KabaneroStatusCodereadyWorkspacesOperatorInstance instance;
+
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
   private String version;
 
 
-  public KabaneroStatusCheCheOperator version(String version) {
+  public KabaneroStatusCodereadyWorkspacesOperator instance(KabaneroStatusCodereadyWorkspacesOperatorInstance instance) {
+    
+    this.instance = instance;
+    return this;
+  }
+
+   /**
+   * Get instance
+   * @return instance
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusCodereadyWorkspacesOperatorInstance getInstance() {
+    return instance;
+  }
+
+
+  public void setInstance(KabaneroStatusCodereadyWorkspacesOperatorInstance instance) {
+    this.instance = instance;
+  }
+
+
+  public KabaneroStatusCodereadyWorkspacesOperator version(String version) {
     
     this.version = version;
     return this;
@@ -67,7 +95,8 @@ public class KabaneroStatusCheCheOperator {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroStatusCheCheOperator {\n");
+    sb.append("class KabaneroStatusCodereadyWorkspacesOperator {\n");
+    sb.append("    instance: ").append(toIndentedString(instance)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -25,15 +25,15 @@ import java.util.List;
  * Kabanero Application Navigator instance readiness status.
  */
 @ApiModel(description = "Kabanero Application Navigator instance readiness status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroStatusKappnav {
   public static final String SERIALIZED_NAME_API_LOCATIONS = "apiLocations";
   @SerializedName(SERIALIZED_NAME_API_LOCATIONS)
   private List<String> apiLocations = null;
 
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
 
   public static final String SERIALIZED_NAME_READY = "ready";
   @SerializedName(SERIALIZED_NAME_READY)
@@ -75,26 +75,26 @@ public class KabaneroStatusKappnav {
   }
 
 
-  public KabaneroStatusKappnav errorMessage(String errorMessage) {
+  public KabaneroStatusKappnav message(String message) {
     
-    this.errorMessage = errorMessage;
+    this.message = message;
     return this;
   }
 
    /**
-   * Get errorMessage
-   * @return errorMessage
+   * Get message
+   * @return message
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getErrorMessage() {
-    return errorMessage;
+  public String getMessage() {
+    return message;
   }
 
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -168,7 +168,7 @@ public class KabaneroStatusKappnav {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroStatusKappnav {\n");
     sb.append("    apiLocations: ").append(toIndentedString(apiLocations)).append("\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("    uiLocations: ").append(toIndentedString(uiLocations)).append("\n");
     sb.append("}");

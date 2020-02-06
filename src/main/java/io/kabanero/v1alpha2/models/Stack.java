@@ -16,9 +16,9 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
-import io.kubernetes.client.models.V1ObjectMeta;
 import io.kabanero.v1alpha2.models.StackSpec;
 import io.kabanero.v1alpha2.models.StackStatus;
+import io.kubernetes.client.models.V1ObjectMeta;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Stack is the Schema for the stack API
  */
 @ApiModel(description = "Stack is the Schema for the stack API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class Stack {
   public static final String SERIALIZED_NAME_API_VERSION = "apiVersion";
   @SerializedName(SERIALIZED_NAME_API_VERSION)

@@ -20,17 +20,71 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * KabaneroCheStatus defines the observed status details of Kabanero Che.
+ * Kabanero collection controller readiness status.
  */
-@ApiModel(description = "KabaneroCheStatus defines the observed status details of Kabanero Che.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
-public class KabaneroStatusCheKabaneroChe {
+@ApiModel(description = "Kabanero collection controller readiness status.")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+public class KabaneroStatusCollectionController {
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
+
+  public static final String SERIALIZED_NAME_READY = "ready";
+  @SerializedName(SERIALIZED_NAME_READY)
+  private String ready;
+
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
   private String version;
 
 
-  public KabaneroStatusCheKabaneroChe version(String version) {
+  public KabaneroStatusCollectionController message(String message) {
+    
+    this.message = message;
+    return this;
+  }
+
+   /**
+   * Get message
+   * @return message
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getMessage() {
+    return message;
+  }
+
+
+  public void setMessage(String message) {
+    this.message = message;
+  }
+
+
+  public KabaneroStatusCollectionController ready(String ready) {
+    
+    this.ready = ready;
+    return this;
+  }
+
+   /**
+   * Get ready
+   * @return ready
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getReady() {
+    return ready;
+  }
+
+
+  public void setReady(String ready) {
+    this.ready = ready;
+  }
+
+
+  public KabaneroStatusCollectionController version(String version) {
     
     this.version = version;
     return this;
@@ -67,7 +121,9 @@ public class KabaneroStatusCheKabaneroChe {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroStatusCheKabaneroChe {\n");
+    sb.append("class KabaneroStatusCollectionController {\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
+    sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();

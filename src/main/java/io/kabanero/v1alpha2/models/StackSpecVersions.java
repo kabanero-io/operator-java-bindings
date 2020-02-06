@@ -27,7 +27,7 @@ import java.util.List;
  * StackVersion defines the desired composition of a specific stack version.
  */
 @ApiModel(description = "StackVersion defines the desired composition of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:41:30.881Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
 public class StackSpecVersions {
   public static final String SERIALIZED_NAME_DESIRED_STATE = "desiredState";
   @SerializedName(SERIALIZED_NAME_DESIRED_STATE)

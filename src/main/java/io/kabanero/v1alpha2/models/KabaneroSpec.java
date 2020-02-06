@@ -17,11 +17,13 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
 import io.kabanero.v1alpha2.models.KabaneroSpecAdmissionControllerWebhook;
-import io.kabanero.v1alpha2.models.KabaneroSpecChe;
 import io.kabanero.v1alpha2.models.KabaneroSpecCliServices;
+import io.kabanero.v1alpha2.models.KabaneroSpecCodeReadyWorkspaces;
+import io.kabanero.v1alpha2.models.KabaneroSpecCollectionController;
 import io.kabanero.v1alpha2.models.KabaneroSpecEvents;
 import io.kabanero.v1alpha2.models.KabaneroSpecGithub;
 import io.kabanero.v1alpha2.models.KabaneroSpecLanding;
+import io.kabanero.v1alpha2.models.KabaneroSpecSso;
 import io.kabanero.v1alpha2.models.KabaneroSpecStackController;
 import io.kabanero.v1alpha2.models.KabaneroSpecStacks;
 import io.kabanero.v1alpha2.models.KabaneroSpecTriggers;
@@ -34,19 +36,23 @@ import java.util.List;
  * KabaneroSpec defines the desired state of Kabanero
  */
 @ApiModel(description = "KabaneroSpec defines the desired state of Kabanero")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroSpec {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)
   private KabaneroSpecAdmissionControllerWebhook admissionControllerWebhook;
 
-  public static final String SERIALIZED_NAME_CHE = "che";
-  @SerializedName(SERIALIZED_NAME_CHE)
-  private KabaneroSpecChe che;
-
   public static final String SERIALIZED_NAME_CLI_SERVICES = "cliServices";
   @SerializedName(SERIALIZED_NAME_CLI_SERVICES)
   private KabaneroSpecCliServices cliServices;
+
+  public static final String SERIALIZED_NAME_CODE_READY_WORKSPACES = "codeReadyWorkspaces";
+  @SerializedName(SERIALIZED_NAME_CODE_READY_WORKSPACES)
+  private KabaneroSpecCodeReadyWorkspaces codeReadyWorkspaces;
+
+  public static final String SERIALIZED_NAME_COLLECTION_CONTROLLER = "collectionController";
+  @SerializedName(SERIALIZED_NAME_COLLECTION_CONTROLLER)
+  private KabaneroSpecCollectionController collectionController;
 
   public static final String SERIALIZED_NAME_EVENTS = "events";
   @SerializedName(SERIALIZED_NAME_EVENTS)
@@ -59,6 +65,10 @@ public class KabaneroSpec {
   public static final String SERIALIZED_NAME_LANDING = "landing";
   @SerializedName(SERIALIZED_NAME_LANDING)
   private KabaneroSpecLanding landing;
+
+  public static final String SERIALIZED_NAME_SSO = "sso";
+  @SerializedName(SERIALIZED_NAME_SSO)
+  private KabaneroSpecSso sso;
 
   public static final String SERIALIZED_NAME_STACK_CONTROLLER = "stackController";
   @SerializedName(SERIALIZED_NAME_STACK_CONTROLLER)
@@ -104,29 +114,6 @@ public class KabaneroSpec {
   }
 
 
-  public KabaneroSpec che(KabaneroSpecChe che) {
-    
-    this.che = che;
-    return this;
-  }
-
-   /**
-   * Get che
-   * @return che
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public KabaneroSpecChe getChe() {
-    return che;
-  }
-
-
-  public void setChe(KabaneroSpecChe che) {
-    this.che = che;
-  }
-
-
   public KabaneroSpec cliServices(KabaneroSpecCliServices cliServices) {
     
     this.cliServices = cliServices;
@@ -147,6 +134,52 @@ public class KabaneroSpec {
 
   public void setCliServices(KabaneroSpecCliServices cliServices) {
     this.cliServices = cliServices;
+  }
+
+
+  public KabaneroSpec codeReadyWorkspaces(KabaneroSpecCodeReadyWorkspaces codeReadyWorkspaces) {
+    
+    this.codeReadyWorkspaces = codeReadyWorkspaces;
+    return this;
+  }
+
+   /**
+   * Get codeReadyWorkspaces
+   * @return codeReadyWorkspaces
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecCodeReadyWorkspaces getCodeReadyWorkspaces() {
+    return codeReadyWorkspaces;
+  }
+
+
+  public void setCodeReadyWorkspaces(KabaneroSpecCodeReadyWorkspaces codeReadyWorkspaces) {
+    this.codeReadyWorkspaces = codeReadyWorkspaces;
+  }
+
+
+  public KabaneroSpec collectionController(KabaneroSpecCollectionController collectionController) {
+    
+    this.collectionController = collectionController;
+    return this;
+  }
+
+   /**
+   * Get collectionController
+   * @return collectionController
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecCollectionController getCollectionController() {
+    return collectionController;
+  }
+
+
+  public void setCollectionController(KabaneroSpecCollectionController collectionController) {
+    this.collectionController = collectionController;
   }
 
 
@@ -216,6 +249,29 @@ public class KabaneroSpec {
 
   public void setLanding(KabaneroSpecLanding landing) {
     this.landing = landing;
+  }
+
+
+  public KabaneroSpec sso(KabaneroSpecSso sso) {
+    
+    this.sso = sso;
+    return this;
+  }
+
+   /**
+   * Get sso
+   * @return sso
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecSso getSso() {
+    return sso;
+  }
+
+
+  public void setSso(KabaneroSpecSso sso) {
+    this.sso = sso;
   }
 
 
@@ -366,11 +422,13 @@ public class KabaneroSpec {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroSpec {\n");
     sb.append("    admissionControllerWebhook: ").append(toIndentedString(admissionControllerWebhook)).append("\n");
-    sb.append("    che: ").append(toIndentedString(che)).append("\n");
     sb.append("    cliServices: ").append(toIndentedString(cliServices)).append("\n");
+    sb.append("    codeReadyWorkspaces: ").append(toIndentedString(codeReadyWorkspaces)).append("\n");
+    sb.append("    collectionController: ").append(toIndentedString(collectionController)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    github: ").append(toIndentedString(github)).append("\n");
     sb.append("    landing: ").append(toIndentedString(landing)).append("\n");
+    sb.append("    sso: ").append(toIndentedString(sso)).append("\n");
     sb.append("    stackController: ").append(toIndentedString(stackController)).append("\n");
     sb.append("    stacks: ").append(toIndentedString(stacks)).append("\n");
     sb.append("    targetNamespaces: ").append(toIndentedString(targetNamespaces)).append("\n");

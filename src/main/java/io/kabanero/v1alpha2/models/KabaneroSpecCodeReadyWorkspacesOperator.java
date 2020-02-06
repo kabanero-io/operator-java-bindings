@@ -16,67 +16,41 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstance;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 /**
- * Admission webhook instance status
+ * CRWOperatorSpec defines customization entries for the codeready-workspaces operator.
  */
-@ApiModel(description = "Admission webhook instance status")
+@ApiModel(description = "CRWOperatorSpec defines customization entries for the codeready-workspaces operator.")
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
-public class KabaneroStatusAdmissionControllerWebhook {
-  public static final String SERIALIZED_NAME_MESSAGE = "message";
-  @SerializedName(SERIALIZED_NAME_MESSAGE)
-  private String message;
-
-  public static final String SERIALIZED_NAME_READY = "ready";
-  @SerializedName(SERIALIZED_NAME_READY)
-  private String ready;
+public class KabaneroSpecCodeReadyWorkspacesOperator {
+  public static final String SERIALIZED_NAME_CUSTOM_RESOURCE_INSTANCE = "customResourceInstance";
+  @SerializedName(SERIALIZED_NAME_CUSTOM_RESOURCE_INSTANCE)
+  private KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstance customResourceInstance;
 
 
-  public KabaneroStatusAdmissionControllerWebhook message(String message) {
+  public KabaneroSpecCodeReadyWorkspacesOperator customResourceInstance(KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstance customResourceInstance) {
     
-    this.message = message;
+    this.customResourceInstance = customResourceInstance;
     return this;
   }
 
    /**
-   * Get message
-   * @return message
+   * Get customResourceInstance
+   * @return customResourceInstance
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public String getMessage() {
-    return message;
+  public KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstance getCustomResourceInstance() {
+    return customResourceInstance;
   }
 
 
-  public void setMessage(String message) {
-    this.message = message;
-  }
-
-
-  public KabaneroStatusAdmissionControllerWebhook ready(String ready) {
-    
-    this.ready = ready;
-    return this;
-  }
-
-   /**
-   * Get ready
-   * @return ready
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getReady() {
-    return ready;
-  }
-
-
-  public void setReady(String ready) {
-    this.ready = ready;
+  public void setCustomResourceInstance(KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstance customResourceInstance) {
+    this.customResourceInstance = customResourceInstance;
   }
 
 
@@ -94,9 +68,8 @@ public class KabaneroStatusAdmissionControllerWebhook {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class KabaneroStatusAdmissionControllerWebhook {\n");
-    sb.append("    message: ").append(toIndentedString(message)).append("\n");
-    sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
+    sb.append("class KabaneroSpecCodeReadyWorkspacesOperator {\n");
+    sb.append("    customResourceInstance: ").append(toIndentedString(customResourceInstance)).append("\n");
     sb.append("}");
     return sb.toString();
   }

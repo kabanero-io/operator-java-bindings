@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * OpenShift serverless operator status.
  */
 @ApiModel(description = "OpenShift serverless operator status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroStatusServerless {
-  public static final String SERIALIZED_NAME_ERROR_MESSAGE = "errorMessage";
-  @SerializedName(SERIALIZED_NAME_ERROR_MESSAGE)
-  private String errorMessage;
-
   public static final String SERIALIZED_NAME_KNATIVE_SERVING = "knativeServing";
   @SerializedName(SERIALIZED_NAME_KNATIVE_SERVING)
   private KabaneroStatusServerlessKnativeServing knativeServing;
+
+  public static final String SERIALIZED_NAME_MESSAGE = "message";
+  @SerializedName(SERIALIZED_NAME_MESSAGE)
+  private String message;
 
   public static final String SERIALIZED_NAME_READY = "ready";
   @SerializedName(SERIALIZED_NAME_READY)
@@ -41,29 +41,6 @@ public class KabaneroStatusServerless {
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
   private String version;
-
-
-  public KabaneroStatusServerless errorMessage(String errorMessage) {
-    
-    this.errorMessage = errorMessage;
-    return this;
-  }
-
-   /**
-   * Get errorMessage
-   * @return errorMessage
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getErrorMessage() {
-    return errorMessage;
-  }
-
-
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
-  }
 
 
   public KabaneroStatusServerless knativeServing(KabaneroStatusServerlessKnativeServing knativeServing) {
@@ -86,6 +63,29 @@ public class KabaneroStatusServerless {
 
   public void setKnativeServing(KabaneroStatusServerlessKnativeServing knativeServing) {
     this.knativeServing = knativeServing;
+  }
+
+
+  public KabaneroStatusServerless message(String message) {
+    
+    this.message = message;
+    return this;
+  }
+
+   /**
+   * Get message
+   * @return message
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getMessage() {
+    return message;
+  }
+
+
+  public void setMessage(String message) {
+    this.message = message;
   }
 
 
@@ -150,8 +150,8 @@ public class KabaneroStatusServerless {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroStatusServerless {\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
     sb.append("    knativeServing: ").append(toIndentedString(knativeServing)).append("\n");
+    sb.append("    message: ").append(toIndentedString(message)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");

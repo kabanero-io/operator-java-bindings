@@ -18,14 +18,15 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
 import io.kabanero.v1alpha2.models.KabaneroStatusAdmissionControllerWebhook;
 import io.kabanero.v1alpha2.models.KabaneroStatusAppsody;
-import io.kabanero.v1alpha2.models.KabaneroStatusChe;
 import io.kabanero.v1alpha2.models.KabaneroStatusCli;
+import io.kabanero.v1alpha2.models.KabaneroStatusCodereadyWorkspaces;
+import io.kabanero.v1alpha2.models.KabaneroStatusCollectionController;
 import io.kabanero.v1alpha2.models.KabaneroStatusEvents;
 import io.kabanero.v1alpha2.models.KabaneroStatusKabaneroInstance;
 import io.kabanero.v1alpha2.models.KabaneroStatusKappnav;
-import io.kabanero.v1alpha2.models.KabaneroStatusKnativeEventing;
 import io.kabanero.v1alpha2.models.KabaneroStatusLanding;
 import io.kabanero.v1alpha2.models.KabaneroStatusServerless;
+import io.kabanero.v1alpha2.models.KabaneroStatusSso;
 import io.kabanero.v1alpha2.models.KabaneroStatusStackController;
 import io.kabanero.v1alpha2.models.KabaneroStatusTekton;
 import io.swagger.annotations.ApiModel;
@@ -35,7 +36,7 @@ import io.swagger.annotations.ApiModelProperty;
  * KabaneroStatus defines the observed state of the Kabanero instance.
  */
 @ApiModel(description = "KabaneroStatus defines the observed state of the Kabanero instance.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-01-23T16:20:08.986Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
 public class KabaneroStatus {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)
@@ -45,13 +46,17 @@ public class KabaneroStatus {
   @SerializedName(SERIALIZED_NAME_APPSODY)
   private KabaneroStatusAppsody appsody;
 
-  public static final String SERIALIZED_NAME_CHE = "che";
-  @SerializedName(SERIALIZED_NAME_CHE)
-  private KabaneroStatusChe che;
-
   public static final String SERIALIZED_NAME_CLI = "cli";
   @SerializedName(SERIALIZED_NAME_CLI)
   private KabaneroStatusCli cli;
+
+  public static final String SERIALIZED_NAME_CODEREADY_WORKSPACES = "codereadyWorkspaces";
+  @SerializedName(SERIALIZED_NAME_CODEREADY_WORKSPACES)
+  private KabaneroStatusCodereadyWorkspaces codereadyWorkspaces;
+
+  public static final String SERIALIZED_NAME_COLLECTION_CONTROLLER = "collectionController";
+  @SerializedName(SERIALIZED_NAME_COLLECTION_CONTROLLER)
+  private KabaneroStatusCollectionController collectionController;
 
   public static final String SERIALIZED_NAME_EVENTS = "events";
   @SerializedName(SERIALIZED_NAME_EVENTS)
@@ -65,10 +70,6 @@ public class KabaneroStatus {
   @SerializedName(SERIALIZED_NAME_KAPPNAV)
   private KabaneroStatusKappnav kappnav;
 
-  public static final String SERIALIZED_NAME_KNATIVE_EVENTING = "knativeEventing";
-  @SerializedName(SERIALIZED_NAME_KNATIVE_EVENTING)
-  private KabaneroStatusKnativeEventing knativeEventing;
-
   public static final String SERIALIZED_NAME_LANDING = "landing";
   @SerializedName(SERIALIZED_NAME_LANDING)
   private KabaneroStatusLanding landing;
@@ -76,6 +77,10 @@ public class KabaneroStatus {
   public static final String SERIALIZED_NAME_SERVERLESS = "serverless";
   @SerializedName(SERIALIZED_NAME_SERVERLESS)
   private KabaneroStatusServerless serverless;
+
+  public static final String SERIALIZED_NAME_SSO = "sso";
+  @SerializedName(SERIALIZED_NAME_SSO)
+  private KabaneroStatusSso sso;
 
   public static final String SERIALIZED_NAME_STACK_CONTROLLER = "stackController";
   @SerializedName(SERIALIZED_NAME_STACK_CONTROLLER)
@@ -132,29 +137,6 @@ public class KabaneroStatus {
   }
 
 
-  public KabaneroStatus che(KabaneroStatusChe che) {
-    
-    this.che = che;
-    return this;
-  }
-
-   /**
-   * Get che
-   * @return che
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public KabaneroStatusChe getChe() {
-    return che;
-  }
-
-
-  public void setChe(KabaneroStatusChe che) {
-    this.che = che;
-  }
-
-
   public KabaneroStatus cli(KabaneroStatusCli cli) {
     
     this.cli = cli;
@@ -175,6 +157,52 @@ public class KabaneroStatus {
 
   public void setCli(KabaneroStatusCli cli) {
     this.cli = cli;
+  }
+
+
+  public KabaneroStatus codereadyWorkspaces(KabaneroStatusCodereadyWorkspaces codereadyWorkspaces) {
+    
+    this.codereadyWorkspaces = codereadyWorkspaces;
+    return this;
+  }
+
+   /**
+   * Get codereadyWorkspaces
+   * @return codereadyWorkspaces
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusCodereadyWorkspaces getCodereadyWorkspaces() {
+    return codereadyWorkspaces;
+  }
+
+
+  public void setCodereadyWorkspaces(KabaneroStatusCodereadyWorkspaces codereadyWorkspaces) {
+    this.codereadyWorkspaces = codereadyWorkspaces;
+  }
+
+
+  public KabaneroStatus collectionController(KabaneroStatusCollectionController collectionController) {
+    
+    this.collectionController = collectionController;
+    return this;
+  }
+
+   /**
+   * Get collectionController
+   * @return collectionController
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusCollectionController getCollectionController() {
+    return collectionController;
+  }
+
+
+  public void setCollectionController(KabaneroStatusCollectionController collectionController) {
+    this.collectionController = collectionController;
   }
 
 
@@ -247,29 +275,6 @@ public class KabaneroStatus {
   }
 
 
-  public KabaneroStatus knativeEventing(KabaneroStatusKnativeEventing knativeEventing) {
-    
-    this.knativeEventing = knativeEventing;
-    return this;
-  }
-
-   /**
-   * Get knativeEventing
-   * @return knativeEventing
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public KabaneroStatusKnativeEventing getKnativeEventing() {
-    return knativeEventing;
-  }
-
-
-  public void setKnativeEventing(KabaneroStatusKnativeEventing knativeEventing) {
-    this.knativeEventing = knativeEventing;
-  }
-
-
   public KabaneroStatus landing(KabaneroStatusLanding landing) {
     
     this.landing = landing;
@@ -313,6 +318,29 @@ public class KabaneroStatus {
 
   public void setServerless(KabaneroStatusServerless serverless) {
     this.serverless = serverless;
+  }
+
+
+  public KabaneroStatus sso(KabaneroStatusSso sso) {
+    
+    this.sso = sso;
+    return this;
+  }
+
+   /**
+   * Get sso
+   * @return sso
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusSso getSso() {
+    return sso;
+  }
+
+
+  public void setSso(KabaneroStatusSso sso) {
+    this.sso = sso;
   }
 
 
@@ -379,14 +407,15 @@ public class KabaneroStatus {
     sb.append("class KabaneroStatus {\n");
     sb.append("    admissionControllerWebhook: ").append(toIndentedString(admissionControllerWebhook)).append("\n");
     sb.append("    appsody: ").append(toIndentedString(appsody)).append("\n");
-    sb.append("    che: ").append(toIndentedString(che)).append("\n");
     sb.append("    cli: ").append(toIndentedString(cli)).append("\n");
+    sb.append("    codereadyWorkspaces: ").append(toIndentedString(codereadyWorkspaces)).append("\n");
+    sb.append("    collectionController: ").append(toIndentedString(collectionController)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    kabaneroInstance: ").append(toIndentedString(kabaneroInstance)).append("\n");
     sb.append("    kappnav: ").append(toIndentedString(kappnav)).append("\n");
-    sb.append("    knativeEventing: ").append(toIndentedString(knativeEventing)).append("\n");
     sb.append("    landing: ").append(toIndentedString(landing)).append("\n");
     sb.append("    serverless: ").append(toIndentedString(serverless)).append("\n");
+    sb.append("    sso: ").append(toIndentedString(sso)).append("\n");
     sb.append("    stackController: ").append(toIndentedString(stackController)).append("\n");
     sb.append("    tekton: ").append(toIndentedString(tekton)).append("\n");
     sb.append("}");
