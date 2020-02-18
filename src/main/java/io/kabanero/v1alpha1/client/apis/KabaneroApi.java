@@ -120,10 +120,10 @@ public class KabaneroApi {
      * @param namespace The namespace to delete the object from
      * @param name The name of the object to delete
      * @param body The delete options as specified by the Kubernetes java client.
-     * @return The status of the delete as returned by the Kubernetes API server.
+     * @return The object that was deleted, as returned by the Kubernetes API server.
      * @throws ApiException Thrown if an error occurred while communicating with the Kubernetes API server.
      */
-    public V1Status deleteKabanero(String namespace, String name, V1DeleteOptions body, Integer gracePeriodSeconds, Boolean orphanDependents, String propagationPolicy) throws ApiException {
+    public Kabanero deleteKabanero(String namespace, String name, V1DeleteOptions body, Integer gracePeriodSeconds, Boolean orphanDependents, String propagationPolicy) throws ApiException {
     	if (namespace == null) {
     		throw new IllegalArgumentException("namespace must not be null");
     	}
@@ -134,8 +134,8 @@ public class KabaneroApi {
     	
     	CustomObjectsApi customApi = new CustomObjectsApi(apiClient);
     	com.squareup.okhttp.Call call = customApi.deleteNamespacedCustomObjectCall(GROUP, VERSION, namespace, PLURAL, name, deleteOptions, gracePeriodSeconds, orphanDependents, propagationPolicy, null, null);
-    	Type localVarReturnType = new TypeToken<V1Status>() {}.getType();
-    	ApiResponse<V1Status> resp = apiClient.execute(call, localVarReturnType);
+    	Type localVarReturnType = new TypeToken<Kabanero>() {}.getType();
+    	ApiResponse<Kabanero> resp = apiClient.execute(call, localVarReturnType);
     	return resp.getData();
     }
     
