@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * CRWCustomizationSpec defines customization entries for codeready-workspaces.
  */
 @ApiModel(description = "CRWCustomizationSpec defines customization entries for codeready-workspaces.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpecCodeReadyWorkspaces {
   public static final String SERIALIZED_NAME_ENABLE = "enable";
   @SerializedName(SERIALIZED_NAME_ENABLE)

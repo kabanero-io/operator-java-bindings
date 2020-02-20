@@ -27,7 +27,7 @@ import java.util.List;
  * InstanceStackConfig defines the customization entries for a set of stacks.
  */
 @ApiModel(description = "InstanceStackConfig defines the customization entries for a set of stacks.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpecStacks {
   public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
   @SerializedName(SERIALIZED_NAME_PIPELINES)

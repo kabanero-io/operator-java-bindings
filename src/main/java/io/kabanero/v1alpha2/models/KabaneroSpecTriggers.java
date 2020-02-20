@@ -16,6 +16,7 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksGitRelease;
 import io.kabanero.v1alpha2.models.KabaneroSpecStacksHttps;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -24,8 +25,12 @@ import io.swagger.annotations.ApiModelProperty;
  * TriggerSpec defines the sets of default triggers for the stacks
  */
 @ApiModel(description = "TriggerSpec defines the sets of default triggers for the stacks")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpecTriggers {
+  public static final String SERIALIZED_NAME_GIT_RELEASE = "gitRelease";
+  @SerializedName(SERIALIZED_NAME_GIT_RELEASE)
+  private KabaneroSpecStacksGitRelease gitRelease;
+
   public static final String SERIALIZED_NAME_HTTPS = "https";
   @SerializedName(SERIALIZED_NAME_HTTPS)
   private KabaneroSpecStacksHttps https;
@@ -37,6 +42,29 @@ public class KabaneroSpecTriggers {
   public static final String SERIALIZED_NAME_SHA256 = "sha256";
   @SerializedName(SERIALIZED_NAME_SHA256)
   private String sha256;
+
+
+  public KabaneroSpecTriggers gitRelease(KabaneroSpecStacksGitRelease gitRelease) {
+    
+    this.gitRelease = gitRelease;
+    return this;
+  }
+
+   /**
+   * Get gitRelease
+   * @return gitRelease
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecStacksGitRelease getGitRelease() {
+    return gitRelease;
+  }
+
+
+  public void setGitRelease(KabaneroSpecStacksGitRelease gitRelease) {
+    this.gitRelease = gitRelease;
+  }
 
 
   public KabaneroSpecTriggers https(KabaneroSpecStacksHttps https) {
@@ -123,6 +151,7 @@ public class KabaneroSpecTriggers {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroSpecTriggers {\n");
+    sb.append("    gitRelease: ").append(toIndentedString(gitRelease)).append("\n");
     sb.append("    https: ").append(toIndentedString(https)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    sha256: ").append(toIndentedString(sha256)).append("\n");

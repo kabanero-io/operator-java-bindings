@@ -16,8 +16,8 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksPipelines;
 import io.kabanero.v1alpha2.models.StackSpecImages;
-import io.kabanero.v1alpha2.models.StackSpecPipelines;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.List;
  * StackVersion defines the desired composition of a specific stack version.
  */
 @ApiModel(description = "StackVersion defines the desired composition of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class StackSpecVersions {
   public static final String SERIALIZED_NAME_DESIRED_STATE = "desiredState";
   @SerializedName(SERIALIZED_NAME_DESIRED_STATE)
@@ -39,7 +39,7 @@ public class StackSpecVersions {
 
   public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
   @SerializedName(SERIALIZED_NAME_PIPELINES)
-  private List<StackSpecPipelines> pipelines = null;
+  private List<KabaneroSpecStacksPipelines> pipelines = null;
 
   public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
   @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
@@ -104,15 +104,15 @@ public class StackSpecVersions {
   }
 
 
-  public StackSpecVersions pipelines(List<StackSpecPipelines> pipelines) {
+  public StackSpecVersions pipelines(List<KabaneroSpecStacksPipelines> pipelines) {
     
     this.pipelines = pipelines;
     return this;
   }
 
-  public StackSpecVersions addPipelinesItem(StackSpecPipelines pipelinesItem) {
+  public StackSpecVersions addPipelinesItem(KabaneroSpecStacksPipelines pipelinesItem) {
     if (this.pipelines == null) {
-      this.pipelines = new ArrayList<StackSpecPipelines>();
+      this.pipelines = new ArrayList<KabaneroSpecStacksPipelines>();
     }
     this.pipelines.add(pipelinesItem);
     return this;
@@ -125,12 +125,12 @@ public class StackSpecVersions {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public List<StackSpecPipelines> getPipelines() {
+  public List<KabaneroSpecStacksPipelines> getPipelines() {
     return pipelines;
   }
 
 
-  public void setPipelines(List<StackSpecPipelines> pipelines) {
+  public void setPipelines(List<KabaneroSpecStacksPipelines> pipelines) {
     this.pipelines = pipelines;
   }
 

@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Kabanero stack controller readiness status.
  */
 @ApiModel(description = "Kabanero stack controller readiness status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroStatusStackController {
   public static final String SERIALIZED_NAME_MESSAGE = "message";
   @SerializedName(SERIALIZED_NAME_MESSAGE)

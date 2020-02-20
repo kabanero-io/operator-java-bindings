@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * CRWOperatorSpec defines customization entries for the codeready-workspaces operator.
  */
 @ApiModel(description = "CRWOperatorSpec defines customization entries for the codeready-workspaces operator.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpecCodeReadyWorkspacesOperator {
   public static final String SERIALIZED_NAME_CUSTOM_RESOURCE_INSTANCE = "customResourceInstance";
   @SerializedName(SERIALIZED_NAME_CUSTOM_RESOURCE_INSTANCE)

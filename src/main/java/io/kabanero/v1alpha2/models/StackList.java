@@ -16,8 +16,8 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroListMetadata;
 import io.kabanero.v1alpha2.models.Stack;
-import io.kabanero.v1alpha2.models.StackListMetadata;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.List;
  * StackList is a list of Stack
  */
 @ApiModel(description = "StackList is a list of Stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class StackList {
   public static final String SERIALIZED_NAME_API_VERSION = "apiVersion";
   @SerializedName(SERIALIZED_NAME_API_VERSION)
@@ -43,7 +43,7 @@ public class StackList {
 
   public static final String SERIALIZED_NAME_METADATA = "metadata";
   @SerializedName(SERIALIZED_NAME_METADATA)
-  private StackListMetadata metadata;
+  private KabaneroListMetadata metadata;
 
 
   public StackList apiVersion(String apiVersion) {
@@ -119,7 +119,7 @@ public class StackList {
   }
 
 
-  public StackList metadata(StackListMetadata metadata) {
+  public StackList metadata(KabaneroListMetadata metadata) {
     
     this.metadata = metadata;
     return this;
@@ -132,12 +132,12 @@ public class StackList {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public StackListMetadata getMetadata() {
+  public KabaneroListMetadata getMetadata() {
     return metadata;
   }
 
 
-  public void setMetadata(StackListMetadata metadata) {
+  public void setMetadata(KabaneroListMetadata metadata) {
     this.metadata = metadata;
   }
 

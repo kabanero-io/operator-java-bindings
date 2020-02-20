@@ -16,6 +16,7 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
+import io.kabanero.v1alpha2.models.KabaneroSpecStacksGitRelease;
 import io.kabanero.v1alpha2.models.StackStatusActiveAssets;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -26,7 +27,7 @@ import java.util.List;
  * PipelineStatus defines the observed state of the assets located within a single pipeline .tar.gz.
  */
 @ApiModel(description = "PipelineStatus defines the observed state of the assets located within a single pipeline .tar.gz.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class StackStatusPipelines {
   public static final String SERIALIZED_NAME_ACTIVE_ASSETS = "activeAssets";
   @SerializedName(SERIALIZED_NAME_ACTIVE_ASSETS)
@@ -35,6 +36,10 @@ public class StackStatusPipelines {
   public static final String SERIALIZED_NAME_DIGEST = "digest";
   @SerializedName(SERIALIZED_NAME_DIGEST)
   private String digest;
+
+  public static final String SERIALIZED_NAME_GIT_RELEASE = "gitRelease";
+  @SerializedName(SERIALIZED_NAME_GIT_RELEASE)
+  private KabaneroSpecStacksGitRelease gitRelease;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
@@ -95,6 +100,28 @@ public class StackStatusPipelines {
 
   public void setDigest(String digest) {
     this.digest = digest;
+  }
+
+
+  public StackStatusPipelines gitRelease(KabaneroSpecStacksGitRelease gitRelease) {
+    
+    this.gitRelease = gitRelease;
+    return this;
+  }
+
+   /**
+   * Get gitRelease
+   * @return gitRelease
+  **/
+  @ApiModelProperty(required = true, value = "")
+
+  public KabaneroSpecStacksGitRelease getGitRelease() {
+    return gitRelease;
+  }
+
+
+  public void setGitRelease(KabaneroSpecStacksGitRelease gitRelease) {
+    this.gitRelease = gitRelease;
   }
 
 
@@ -159,6 +186,7 @@ public class StackStatusPipelines {
     sb.append("class StackStatusPipelines {\n");
     sb.append("    activeAssets: ").append(toIndentedString(activeAssets)).append("\n");
     sb.append("    digest: ").append(toIndentedString(digest)).append("\n");
+    sb.append("    gitRelease: ").append(toIndentedString(gitRelease)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");

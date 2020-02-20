@@ -36,7 +36,7 @@ import java.util.List;
  * KabaneroSpec defines the desired state of Kabanero
  */
 @ApiModel(description = "KabaneroSpec defines the desired state of Kabanero")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpec {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)

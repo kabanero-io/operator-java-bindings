@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Image defines a container image used by a stack
  */
 @ApiModel(description = "Image defines a container image used by a stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class StackSpecImages {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)

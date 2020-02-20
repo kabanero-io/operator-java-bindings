@@ -36,7 +36,7 @@ import io.swagger.annotations.ApiModelProperty;
  * KabaneroStatus defines the observed state of the Kabanero instance.
  */
 @ApiModel(description = "KabaneroStatus defines the observed state of the Kabanero instance.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroStatus {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)

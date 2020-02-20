@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Stack is the Schema for the stack API
  */
 @ApiModel(description = "Stack is the Schema for the stack API")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:49:09.720Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class Stack {
   public static final String SERIALIZED_NAME_API_VERSION = "apiVersion";
   @SerializedName(SERIALIZED_NAME_API_VERSION)

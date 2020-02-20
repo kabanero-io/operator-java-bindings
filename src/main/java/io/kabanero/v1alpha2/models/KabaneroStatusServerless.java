@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * OpenShift serverless operator status.
  */
 @ApiModel(description = "OpenShift serverless operator status.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroStatusServerless {
   public static final String SERIALIZED_NAME_KNATIVE_SERVING = "knativeServing";
   @SerializedName(SERIALIZED_NAME_KNATIVE_SERVING)

@@ -12,7 +12,6 @@ import io.kubernetes.client.ApiResponse;
 import io.kubernetes.client.Configuration;
 import io.kubernetes.client.apis.CustomObjectsApi;
 import io.kubernetes.client.models.V1DeleteOptions;
-import io.kubernetes.client.models.V1Status;
 
 public class CollectionApi {
 

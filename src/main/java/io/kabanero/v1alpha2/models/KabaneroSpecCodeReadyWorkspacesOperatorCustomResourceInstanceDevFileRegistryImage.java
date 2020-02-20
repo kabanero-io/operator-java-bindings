@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
  * CWRCustomResourceDevFileRegImage defines DevFileRegistryImage custom resource customization for the codeready-workspaces operator.
  */
 @ApiModel(description = "CWRCustomResourceDevFileRegImage defines DevFileRegistryImage custom resource customization for the codeready-workspaces operator.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-06T20:45:49.673Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
 public class KabaneroSpecCodeReadyWorkspacesOperatorCustomResourceInstanceDevFileRegistryImage {
   public static final String SERIALIZED_NAME_IMAGE = "image";
   @SerializedName(SERIALIZED_NAME_IMAGE)

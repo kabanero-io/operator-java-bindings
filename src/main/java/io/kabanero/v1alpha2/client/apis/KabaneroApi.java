@@ -12,8 +12,6 @@ import io.kubernetes.client.apis.CustomObjectsApi;
 import io.kubernetes.client.models.V1DeleteOptions;
 import io.kubernetes.client.models.V1ObjectMeta;
 import io.kubernetes.client.models.V1OwnerReference;
-import io.kubernetes.client.models.V1Status;
-
 import java.lang.reflect.Type;
 
 /**
