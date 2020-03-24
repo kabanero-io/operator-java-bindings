@@ -26,11 +26,15 @@ import java.util.List;
  * StackStatus defines the observed state of a stack
  */
 @ApiModel(description = "StackStatus defines the observed state of a stack")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-24T19:58:29.096Z[Etc/UTC]")
 public class StackStatus {
   public static final String SERIALIZED_NAME_STATUS_MESSAGE = "statusMessage";
   @SerializedName(SERIALIZED_NAME_STATUS_MESSAGE)
   private String statusMessage;
+
+  public static final String SERIALIZED_NAME_SUMMARY = "summary";
+  @SerializedName(SERIALIZED_NAME_SUMMARY)
+  private String summary;
 
   public static final String SERIALIZED_NAME_VERSIONS = "versions";
   @SerializedName(SERIALIZED_NAME_VERSIONS)
@@ -57,6 +61,29 @@ public class StackStatus {
 
   public void setStatusMessage(String statusMessage) {
     this.statusMessage = statusMessage;
+  }
+
+
+  public StackStatus summary(String summary) {
+    
+    this.summary = summary;
+    return this;
+  }
+
+   /**
+   * Get summary
+   * @return summary
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getSummary() {
+    return summary;
+  }
+
+
+  public void setSummary(String summary) {
+    this.summary = summary;
   }
 
 
@@ -107,6 +134,7 @@ public class StackStatus {
     StringBuilder sb = new StringBuilder();
     sb.append("class StackStatus {\n");
     sb.append("    statusMessage: ").append(toIndentedString(statusMessage)).append("\n");
+    sb.append("    summary: ").append(toIndentedString(summary)).append("\n");
     sb.append("    versions: ").append(toIndentedString(versions)).append("\n");
     sb.append("}");
     return sb.toString();

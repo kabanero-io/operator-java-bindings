@@ -23,11 +23,23 @@ import io.swagger.annotations.ApiModelProperty;
  * KabaneroLandingCustomizationSpec defines customization entries for Kabanero landing page.
  */
 @ApiModel(description = "KabaneroLandingCustomizationSpec defines customization entries for Kabanero landing page.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-24T19:58:29.096Z[Etc/UTC]")
 public class KabaneroSpecLanding {
   public static final String SERIALIZED_NAME_ENABLE = "enable";
   @SerializedName(SERIALIZED_NAME_ENABLE)
   private Boolean enable;
+
+  public static final String SERIALIZED_NAME_IMAGE = "image";
+  @SerializedName(SERIALIZED_NAME_IMAGE)
+  private String image;
+
+  public static final String SERIALIZED_NAME_REPOSITORY = "repository";
+  @SerializedName(SERIALIZED_NAME_REPOSITORY)
+  private String repository;
+
+  public static final String SERIALIZED_NAME_TAG = "tag";
+  @SerializedName(SERIALIZED_NAME_TAG)
+  private String tag;
 
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
@@ -54,6 +66,75 @@ public class KabaneroSpecLanding {
 
   public void setEnable(Boolean enable) {
     this.enable = enable;
+  }
+
+
+  public KabaneroSpecLanding image(String image) {
+    
+    this.image = image;
+    return this;
+  }
+
+   /**
+   * Get image
+   * @return image
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getImage() {
+    return image;
+  }
+
+
+  public void setImage(String image) {
+    this.image = image;
+  }
+
+
+  public KabaneroSpecLanding repository(String repository) {
+    
+    this.repository = repository;
+    return this;
+  }
+
+   /**
+   * Get repository
+   * @return repository
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getRepository() {
+    return repository;
+  }
+
+
+  public void setRepository(String repository) {
+    this.repository = repository;
+  }
+
+
+  public KabaneroSpecLanding tag(String tag) {
+    
+    this.tag = tag;
+    return this;
+  }
+
+   /**
+   * Get tag
+   * @return tag
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public String getTag() {
+    return tag;
+  }
+
+
+  public void setTag(String tag) {
+    this.tag = tag;
   }
 
 
@@ -96,6 +177,9 @@ public class KabaneroSpecLanding {
     StringBuilder sb = new StringBuilder();
     sb.append("class KabaneroSpecLanding {\n");
     sb.append("    enable: ").append(toIndentedString(enable)).append("\n");
+    sb.append("    image: ").append(toIndentedString(image)).append("\n");
+    sb.append("    repository: ").append(toIndentedString(repository)).append("\n");
+    sb.append("    tag: ").append(toIndentedString(tag)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();

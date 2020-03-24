@@ -22,6 +22,7 @@ import io.kabanero.v1alpha2.models.KabaneroSpecCodeReadyWorkspaces;
 import io.kabanero.v1alpha2.models.KabaneroSpecCollectionController;
 import io.kabanero.v1alpha2.models.KabaneroSpecEvents;
 import io.kabanero.v1alpha2.models.KabaneroSpecGithub;
+import io.kabanero.v1alpha2.models.KabaneroSpecGovernancePolicy;
 import io.kabanero.v1alpha2.models.KabaneroSpecLanding;
 import io.kabanero.v1alpha2.models.KabaneroSpecSso;
 import io.kabanero.v1alpha2.models.KabaneroSpecStackController;
@@ -36,7 +37,7 @@ import java.util.List;
  * KabaneroSpec defines the desired state of Kabanero
  */
 @ApiModel(description = "KabaneroSpec defines the desired state of Kabanero")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-24T19:58:29.096Z[Etc/UTC]")
 public class KabaneroSpec {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)
@@ -61,6 +62,10 @@ public class KabaneroSpec {
   public static final String SERIALIZED_NAME_GITHUB = "github";
   @SerializedName(SERIALIZED_NAME_GITHUB)
   private KabaneroSpecGithub github;
+
+  public static final String SERIALIZED_NAME_GOVERNANCE_POLICY = "governancePolicy";
+  @SerializedName(SERIALIZED_NAME_GOVERNANCE_POLICY)
+  private KabaneroSpecGovernancePolicy governancePolicy;
 
   public static final String SERIALIZED_NAME_LANDING = "landing";
   @SerializedName(SERIALIZED_NAME_LANDING)
@@ -226,6 +231,29 @@ public class KabaneroSpec {
 
   public void setGithub(KabaneroSpecGithub github) {
     this.github = github;
+  }
+
+
+  public KabaneroSpec governancePolicy(KabaneroSpecGovernancePolicy governancePolicy) {
+    
+    this.governancePolicy = governancePolicy;
+    return this;
+  }
+
+   /**
+   * Get governancePolicy
+   * @return governancePolicy
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroSpecGovernancePolicy getGovernancePolicy() {
+    return governancePolicy;
+  }
+
+
+  public void setGovernancePolicy(KabaneroSpecGovernancePolicy governancePolicy) {
+    this.governancePolicy = governancePolicy;
   }
 
 
@@ -427,6 +455,7 @@ public class KabaneroSpec {
     sb.append("    collectionController: ").append(toIndentedString(collectionController)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
     sb.append("    github: ").append(toIndentedString(github)).append("\n");
+    sb.append("    governancePolicy: ").append(toIndentedString(governancePolicy)).append("\n");
     sb.append("    landing: ").append(toIndentedString(landing)).append("\n");
     sb.append("    sso: ").append(toIndentedString(sso)).append("\n");
     sb.append("    stackController: ").append(toIndentedString(stackController)).append("\n");

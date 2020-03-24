@@ -16,7 +16,7 @@ package io.kabanero.v1alpha2.models;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import com.google.gson.annotations.SerializedName;
-import io.kabanero.v1alpha2.models.StackSpecImages;
+import io.kabanero.v1alpha2.models.StackStatusImages;
 import io.kabanero.v1alpha2.models.StackStatusPipelines;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -27,11 +27,11 @@ import java.util.List;
  * StackVersionStatus defines the observed state of a specific stack version.
  */
 @ApiModel(description = "StackVersionStatus defines the observed state of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-03-24T19:58:29.096Z[Etc/UTC]")
 public class StackStatusVersions {
   public static final String SERIALIZED_NAME_IMAGES = "images";
   @SerializedName(SERIALIZED_NAME_IMAGES)
-  private List<StackSpecImages> images = null;
+  private List<StackStatusImages> images = null;
 
   public static final String SERIALIZED_NAME_LOCATION = "location";
   @SerializedName(SERIALIZED_NAME_LOCATION)
@@ -54,15 +54,15 @@ public class StackStatusVersions {
   private String version;
 
 
-  public StackStatusVersions images(List<StackSpecImages> images) {
+  public StackStatusVersions images(List<StackStatusImages> images) {
     
     this.images = images;
     return this;
   }
 
-  public StackStatusVersions addImagesItem(StackSpecImages imagesItem) {
+  public StackStatusVersions addImagesItem(StackStatusImages imagesItem) {
     if (this.images == null) {
-      this.images = new ArrayList<StackSpecImages>();
+      this.images = new ArrayList<StackStatusImages>();
     }
     this.images.add(imagesItem);
     return this;
@@ -75,12 +75,12 @@ public class StackStatusVersions {
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public List<StackSpecImages> getImages() {
+  public List<StackStatusImages> getImages() {
     return images;
   }
 
 
-  public void setImages(List<StackSpecImages> images) {
+  public void setImages(List<StackStatusImages> images) {
     this.images = images;
   }
 
