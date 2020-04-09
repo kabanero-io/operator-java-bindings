@@ -27,7 +27,7 @@ import java.util.List;
  * InstanceStackConfig defines the customization entries for a set of stacks.
  */
 @ApiModel(description = "InstanceStackConfig defines the customization entries for a set of stacks.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-09T20:30:27.638Z[Etc/UTC]")
 public class KabaneroSpecStacks {
   public static final String SERIALIZED_NAME_PIPELINES = "pipelines";
   @SerializedName(SERIALIZED_NAME_PIPELINES)
@@ -36,6 +36,10 @@ public class KabaneroSpecStacks {
   public static final String SERIALIZED_NAME_REPOSITORIES = "repositories";
   @SerializedName(SERIALIZED_NAME_REPOSITORIES)
   private List<KabaneroSpecStacksRepositories> repositories = null;
+
+  public static final String SERIALIZED_NAME_SKIP_REGISTRY_CERT_VERIFICATION = "skipRegistryCertVerification";
+  @SerializedName(SERIALIZED_NAME_SKIP_REGISTRY_CERT_VERIFICATION)
+  private Boolean skipRegistryCertVerification;
 
 
   public KabaneroSpecStacks pipelines(List<KabaneroSpecStacksPipelines> pipelines) {
@@ -100,6 +104,29 @@ public class KabaneroSpecStacks {
   }
 
 
+  public KabaneroSpecStacks skipRegistryCertVerification(Boolean skipRegistryCertVerification) {
+    
+    this.skipRegistryCertVerification = skipRegistryCertVerification;
+    return this;
+  }
+
+   /**
+   * Get skipRegistryCertVerification
+   * @return skipRegistryCertVerification
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public Boolean getSkipRegistryCertVerification() {
+    return skipRegistryCertVerification;
+  }
+
+
+  public void setSkipRegistryCertVerification(Boolean skipRegistryCertVerification) {
+    this.skipRegistryCertVerification = skipRegistryCertVerification;
+  }
+
+
   @Override
   public boolean equals(java.lang.Object o) {
     return EqualsBuilder.reflectionEquals(this, o);
@@ -117,6 +144,7 @@ public class KabaneroSpecStacks {
     sb.append("class KabaneroSpecStacks {\n");
     sb.append("    pipelines: ").append(toIndentedString(pipelines)).append("\n");
     sb.append("    repositories: ").append(toIndentedString(repositories)).append("\n");
+    sb.append("    skipRegistryCertVerification: ").append(toIndentedString(skipRegistryCertVerification)).append("\n");
     sb.append("}");
     return sb.toString();
   }

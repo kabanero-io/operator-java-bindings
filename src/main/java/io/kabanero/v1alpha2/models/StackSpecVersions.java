@@ -27,7 +27,7 @@ import java.util.List;
  * StackVersion defines the desired composition of a specific stack version.
  */
 @ApiModel(description = "StackVersion defines the desired composition of a specific stack version.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-09T20:30:27.638Z[Etc/UTC]")
 public class StackSpecVersions {
   public static final String SERIALIZED_NAME_DESIRED_STATE = "desiredState";
   @SerializedName(SERIALIZED_NAME_DESIRED_STATE)
@@ -44,6 +44,10 @@ public class StackSpecVersions {
   public static final String SERIALIZED_NAME_SKIP_CERT_VERIFICATION = "skipCertVerification";
   @SerializedName(SERIALIZED_NAME_SKIP_CERT_VERIFICATION)
   private Boolean skipCertVerification;
+
+  public static final String SERIALIZED_NAME_SKIP_REGISTRY_CERT_VERIFICATION = "skipRegistryCertVerification";
+  @SerializedName(SERIALIZED_NAME_SKIP_REGISTRY_CERT_VERIFICATION)
+  private Boolean skipRegistryCertVerification;
 
   public static final String SERIALIZED_NAME_VERSION = "version";
   @SerializedName(SERIALIZED_NAME_VERSION)
@@ -158,6 +162,29 @@ public class StackSpecVersions {
   }
 
 
+  public StackSpecVersions skipRegistryCertVerification(Boolean skipRegistryCertVerification) {
+    
+    this.skipRegistryCertVerification = skipRegistryCertVerification;
+    return this;
+  }
+
+   /**
+   * Get skipRegistryCertVerification
+   * @return skipRegistryCertVerification
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public Boolean getSkipRegistryCertVerification() {
+    return skipRegistryCertVerification;
+  }
+
+
+  public void setSkipRegistryCertVerification(Boolean skipRegistryCertVerification) {
+    this.skipRegistryCertVerification = skipRegistryCertVerification;
+  }
+
+
   public StackSpecVersions version(String version) {
     
     this.version = version;
@@ -200,6 +227,7 @@ public class StackSpecVersions {
     sb.append("    images: ").append(toIndentedString(images)).append("\n");
     sb.append("    pipelines: ").append(toIndentedString(pipelines)).append("\n");
     sb.append("    skipCertVerification: ").append(toIndentedString(skipCertVerification)).append("\n");
+    sb.append("    skipRegistryCertVerification: ").append(toIndentedString(skipRegistryCertVerification)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
     sb.append("}");
     return sb.toString();
