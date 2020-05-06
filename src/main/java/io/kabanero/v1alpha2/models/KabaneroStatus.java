@@ -22,6 +22,7 @@ import io.kabanero.v1alpha2.models.KabaneroStatusCli;
 import io.kabanero.v1alpha2.models.KabaneroStatusCodereadyWorkspaces;
 import io.kabanero.v1alpha2.models.KabaneroStatusCollectionController;
 import io.kabanero.v1alpha2.models.KabaneroStatusEvents;
+import io.kabanero.v1alpha2.models.KabaneroStatusGitops;
 import io.kabanero.v1alpha2.models.KabaneroStatusKabaneroInstance;
 import io.kabanero.v1alpha2.models.KabaneroStatusKappnav;
 import io.kabanero.v1alpha2.models.KabaneroStatusLanding;
@@ -36,7 +37,7 @@ import io.swagger.annotations.ApiModelProperty;
  * KabaneroStatus defines the observed state of the Kabanero instance.
  */
 @ApiModel(description = "KabaneroStatus defines the observed state of the Kabanero instance.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-20T17:26:32.414Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-05T21:07:19.055Z[Etc/UTC]")
 public class KabaneroStatus {
   public static final String SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK = "admissionControllerWebhook";
   @SerializedName(SERIALIZED_NAME_ADMISSION_CONTROLLER_WEBHOOK)
@@ -61,6 +62,10 @@ public class KabaneroStatus {
   public static final String SERIALIZED_NAME_EVENTS = "events";
   @SerializedName(SERIALIZED_NAME_EVENTS)
   private KabaneroStatusEvents events;
+
+  public static final String SERIALIZED_NAME_GITOPS = "gitops";
+  @SerializedName(SERIALIZED_NAME_GITOPS)
+  private KabaneroStatusGitops gitops;
 
   public static final String SERIALIZED_NAME_KABANERO_INSTANCE = "kabaneroInstance";
   @SerializedName(SERIALIZED_NAME_KABANERO_INSTANCE)
@@ -226,6 +231,29 @@ public class KabaneroStatus {
 
   public void setEvents(KabaneroStatusEvents events) {
     this.events = events;
+  }
+
+
+  public KabaneroStatus gitops(KabaneroStatusGitops gitops) {
+    
+    this.gitops = gitops;
+    return this;
+  }
+
+   /**
+   * Get gitops
+   * @return gitops
+  **/
+  @javax.annotation.Nullable
+  @ApiModelProperty(value = "")
+
+  public KabaneroStatusGitops getGitops() {
+    return gitops;
+  }
+
+
+  public void setGitops(KabaneroStatusGitops gitops) {
+    this.gitops = gitops;
   }
 
 
@@ -411,6 +439,7 @@ public class KabaneroStatus {
     sb.append("    codereadyWorkspaces: ").append(toIndentedString(codereadyWorkspaces)).append("\n");
     sb.append("    collectionController: ").append(toIndentedString(collectionController)).append("\n");
     sb.append("    events: ").append(toIndentedString(events)).append("\n");
+    sb.append("    gitops: ").append(toIndentedString(gitops)).append("\n");
     sb.append("    kabaneroInstance: ").append(toIndentedString(kabaneroInstance)).append("\n");
     sb.append("    kappnav: ").append(toIndentedString(kappnav)).append("\n");
     sb.append("    landing: ").append(toIndentedString(landing)).append("\n");

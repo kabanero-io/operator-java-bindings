@@ -6,7 +6,7 @@ In your pom.xml:
     <dependency>
       <groupId>io.kabanero</groupId>
       <artifactId>operator-java-bindings</artifactId>
-      <version>0.8.0</version>
+      <version>0.9.0-SNAPSHOT</version>
     </dependency>
 ```
 
